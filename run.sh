@@ -7,7 +7,6 @@ echo "Usage: ./run [new_key.pub] [ip.txt]"
 exit
 elif [[ $1 == *.pub && $2 == ip.txt ]]
 then
-#USER=$1
 key=$(cat $1)
 ip_address=$2
 else
@@ -37,4 +36,3 @@ else
 echo "Failure $ip"
 fi
 done
-rm out.txt
